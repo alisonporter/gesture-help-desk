@@ -49,7 +49,7 @@ a {
 
 .container {
   border-bottom-style: solid;
-  border-bottom: 75%;
+  border-bottom-width: 75%;
 }
 
 header {
@@ -58,6 +58,7 @@ header {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  resize: both;
 }
 
 nav li {
