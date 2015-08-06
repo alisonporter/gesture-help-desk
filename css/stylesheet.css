@@ -40,24 +40,17 @@ a {
   text-decoration: none;
 }
 
-.logo {
-  width: 128px;
-  height: 150px;
-  margin: 25px;
-  float: left;
-}
-
 .container {
   border-bottom-style: solid;
-  border-bottom-width: 75%;
 }
 
+
 header {
-  background: url(../images/gesture-intro.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: url(../images/gesture-intro.jpg) no-repeat center fixed;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
   resize: both;
 }
 
@@ -66,7 +59,7 @@ nav li {
   float: right;
   margin: 10px;
   font-size: 24px;
-  padding: 20px;
+  padding: 15px;
 }
 
 nav a {
@@ -75,7 +68,8 @@ nav a {
 }
 
 nav ul {
-  padding: 25px;
+  padding: 40px;
+  position: relative;
 }
 
 h1 {
@@ -121,6 +115,16 @@ h2 {
   margin: 50px;
   background-color: #702F8A;
   color: #e2dccb;
+}
+
+.col-1-3 {
+  width: 33.3%;
+  float: left;
+}
+
+.imgCol-1-3 {
+  width: 33.3%;
+  float: left;
 }
 
 footer {
