@@ -34,6 +34,31 @@ body {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-weight: 300;
   background: #e2dccb;
+  /*background: url(../images/gesture-intro.jpg) no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  resize: both;*/
+}
+
+header {
+  position: relative;
+  z-index: 1;
+}
+
+.coverImg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 1460px;
+  height: auto;
+}
+
+.main {
+  position: relative;
+  z-index: 9;
 }
 
 a {
@@ -42,16 +67,9 @@ a {
 
 .container {
   border-bottom-style: solid;
-}
-
-
-header {
-  background: url(../images/gesture-intro.jpg) no-repeat center fixed;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
-  resize: both;
+  z-index: 2;
+  position: relative;
+  height: 440px;
 }
 
 nav li {
@@ -77,31 +95,33 @@ h1 {
   clear: both;
   text-align: center;
   font-size: 72px;
-  padding: 100px;
+  padding: 50px;
   margin-bottom: 250px;
 }
 
 h2 {
   text-align: center;
   font-size: 40px;
+  margin-top: 0;
+  padding-top: 30px;
 }
 
 .about {
-  height: 500px;
+  height: 650px;
   border-bottom-style: solid;
-  border-bottom: 75%;
+  background-color: #e2dccb;
 }
 
 .howTo {
-  height: 1000px;
+  height: 1450px;
   border-bottom-style: solid;
-  border-bottom: 75%;
+  background-color: #e2dccb;
 }
 
 .support {
-  height: 500px;
+  height: 650px;
   border-bottom-style: solid;
-  border-bottom: 75%;
+  background-color: #e2dccb;
 }
 
 .button {
@@ -120,11 +140,17 @@ h2 {
 .col-1-3 {
   width: 33.3%;
   float: left;
+  text-align: center;
 }
 
-.imgCol-1-3 {
+.col-1-3 img {
   width: 33.3%;
-  float: left;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  border: solid white 15px;
 }
 
 footer {
