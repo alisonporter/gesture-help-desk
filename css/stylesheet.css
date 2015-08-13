@@ -47,6 +47,15 @@ header {
   z-index: 1;
 }
 
+.menuIcon{
+  /*display: none;*/
+  height: 40px;
+  width: 40px;
+  float: left;
+  margin: 20px;
+  z-index: 999;
+}
+
 .coverImg {
   position: fixed;
   top: 0;
@@ -74,7 +83,6 @@ a {
 
 nav li {
   display: inline-block;
-  float: right;
   margin: 10px;
   font-size: 24px;
   padding: 15px;
@@ -88,6 +96,7 @@ nav a {
 nav ul {
   padding: 40px;
   position: relative;
+  float: right;
 }
 
 h1 {
@@ -107,21 +116,21 @@ h2 {
 }
 
 .about {
-  height: 650px;
   border-bottom-style: solid;
   background-color: #e2dccb;
+  padding-bottom: 50px;
 }
 
 .howTo {
-  height: 1450px;
   border-bottom-style: solid;
   background-color: #e2dccb;
+  padding-bottom: 50px;
 }
 
 .support {
-  height: 650px;
   border-bottom-style: solid;
   background-color: #e2dccb;
+  padding-bottom: 50px;
 }
 
 .button {
@@ -193,8 +202,36 @@ blockquote {
   margin-top: 0;
 }
 
+ol {
+  margin: 30px auto;
+  border: 3px solid white;
+  width: 55%;
+  padding: 30px 50px;
+  font-size: 20px;
+  border-radius: 15px;
+}
+
+ol a {
+  color: #702F8A;
+  text-decoration: underline;
+}
+
 
 @media (max-width: 768px) {
+
+  /*.menuIcon {
+    display: inline-block;
+  }*/
+
+  nav ul {
+    float: none;
+    display: none;
+  }
+
+  nav li {
+    display: block;
+    border-bottom: 1px solid white;
+  }
 
   .col-1-3 {
     float: none;
