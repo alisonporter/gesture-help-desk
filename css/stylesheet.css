@@ -239,3 +239,34 @@ ol a {
   }
 
 }
+
+form {
+  margin: 30px auto;
+  border: 3px solid white;
+  width: 55%;
+  padding: 30px 50px;
+  font-size: 20px;
+  border-radius: 15px;
+}
+
+input {
+  margin-bottom: 10px;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+select {
+  margin-bottom: 8px;
+  color: #702F8A;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  background: white;
+}
+
+textarea {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 25px;
+}
