@@ -29,8 +29,53 @@
   </header>
 
   <div class="main">
-    <div>
-    </div>
+      <form action="#">
+        <label>Full Name</label>
+        <input type="text" placeholder="Full Name" name="name" required />
+
+        <br/>
+
+        <label>Email</label>
+        <input type="email" placeholder="Email" name="email" required />
+
+        <br/>
+
+        <label>EPM Name
+          <input type="radio" name="EPM" value="AP"> Alison Porter
+        </label>
+        <label>
+          <input type="radio" name="EPM" value="CD"> Cara Dickerson
+        </label>
+        <label>
+          <input type="radio" name="EPM" value="EP"> Erin Phillips
+        </label>
+        <label>
+          <input type="radio" name="EPM" value="KM"> Kelsie Modig
+        </label>
+
+        <br/>
+
+        <label>Level of Urgency</label>
+        <select>
+            <option value="01">High</option>
+            <option value="02">Medium</option>
+            <option value="03">Low</option>
+        </select>
+
+        <br/>
+
+        <label>Describe the problem or question:</label>
+        <br/>
+        <textarea placeholder="Type issue here..." required></textarea>
+
+        <br/>
+
+        <input type="submit" value="Submit" />
+
+      </form>
+
+
+
 
     <footer>
       <img class="footerLogo" src="images/Gstr_Logo_CMYK_Inline.png">
