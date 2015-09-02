@@ -45,15 +45,18 @@ body {
 header {
   position: relative;
   z-index: 1;
+  background-image: url("../images/gesture-intro.jpg");
+  background-size: cover;
 }
 
 .menuIcon{
-  /*display: none;*/
+  display: none;
   height: 40px;
   width: 40px;
   float: left;
   margin: 20px;
   z-index: 999;
+  position: relative;
 }
 
 .coverImg {
@@ -89,17 +92,14 @@ nav li {
   font-weight: 600;
 }
 
-nav li:hover {
-  background: white;
-}
-
 nav a {
   text-decoration: none;
   color: white;
 }
 
-nav a:hover {
+nav li:hover {
   color: #702F8A;
+  background: white;
 }
 
 nav ul {
@@ -188,14 +188,15 @@ footer {
 }
 
 .containerOther {
-  background: #702F8A;
+  background-image: url("../images/headerbackground.jpg");
+  background-size: cover;
 }
 
 blockquote {
   font-weight: 600;
   text-align: center;
-  font-size: 28px;
-  padding-top: 100px;
+  font-size: 2em;
+  padding-top: 100px;;
   padding-bottom: 100px;
 }
 
@@ -228,14 +229,18 @@ ol a {
 
 
 @media (max-width: 768px) {
+  #top-nav {
+    display: none;
+  }
 
-  /*.menuIcon {
+  .menuIcon {
     display: inline-block;
-  }*/
+  }
 
   nav ul {
     float: none;
-    display: none;
+    display: block;
+    margin: 0;
   }
 
   nav li {
